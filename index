@@ -417,12 +417,13 @@
   <div class="header-sub">基于LATAM与巴西账号数据 · 2026年6月</div>
   <div class="header-stats">
     <div class="header-stat">
-      <div class="header-stat-val">232</div>
+      <div class="header-stat-val">233</div>
       <div class="header-stat-label">当前粉丝数</div>
     </div>
     <div class="header-stat">
       <div class="header-stat-val">$500</div>
-      <div class="header-stat-label">建议月预算（初期）</div>
+      <div class="header-stat-label">
+      月预算（初期）</div>
     </div>
     <div class="header-stat">
       <div class="header-stat-val">$0.10–0.15</div>
@@ -652,7 +653,7 @@
   <div class="steps-list">
     <div class="step-item">
       <div class="step-num">1</div>
-      <div class="step-text"><strong>确认月预算</strong> — 建议第1个月批准 $500 测试预算</div>
+      <div class="step-text"><strong>确认月预算</strong> — 第1个月批准 $500 测试预算</div>
     </div>
     <div class="step-item">
       <div class="step-num">2</div>
