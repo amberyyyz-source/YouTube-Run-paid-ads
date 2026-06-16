@@ -1,60 +1,61 @@
 <html><head><style>
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:var(--font-sans)}
-.header{background:linear-gradient(135deg,#1B5E20,#2E7D32);color:#fff;padding:32px;border-radius:var(--border-radius-lg) var(--border-radius-lg) 0 0}
-.header-title{font-size:22px;font-weight:500;margin-bottom:20px}
+.header{background:linear-gradient(135deg,#1B5E20,#2E7D32);color:#fff;padding:28px 32px;border-radius:var(--border-radius-lg) var(--border-radius-lg) 0 0}
+.header-title{font-size:20px;font-weight:500;margin-bottom:16px}
 .header-kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-.kpi-val{font-size:22px;font-weight:500;color:#A5D6A7}
+.kpi-val{font-size:20px;font-weight:500;color:#A5D6A7}
 .kpi-label{font-size:11px;color:rgba(255,255,255,.55);margin-top:3px}
-.body{padding:28px 32px 48px;display:flex;flex-direction:column;gap:32px}
-.section-label{font-size:11px;font-weight:500;letter-spacing:.09em;text-transform:uppercase;color:var(--color-text-secondary);margin-bottom:14px;display:flex;align-items:center;gap:10px}
+.body{padding:20px 28px 36px;display:flex;flex-direction:column;gap:20px}
+.section-label{font-size:11px;font-weight:500;letter-spacing:.09em;text-transform:uppercase;color:var(--color-text-secondary);margin-bottom:10px;display:flex;align-items:center;gap:10px}
 .section-label::after{content:'';flex:1;height:0.5px;background:var(--color-border-tertiary)}
-.cards-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px}
-.card{background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg);padding:16px}
+.cards-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px}
+.card{background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg);padding:14px}
 .card-title{font-size:13px;font-weight:500;color:var(--color-text-primary);margin-bottom:4px}
 .card-desc{font-size:12px;color:var(--color-text-secondary);line-height:1.5}
-.video-list{display:flex;flex-direction:column;gap:10px}
-.video-item{background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg);padding:14px 16px;display:grid;grid-template-columns:auto 1fr auto;gap:12px;align-items:start}
-.video-rank{width:28px;height:28px;border-radius:50%;background:#E8F5E9;color:#1B5E20;font-size:12px;font-weight:500;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
+.video-list{display:flex;flex-direction:column;gap:8px}
+.video-item{background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg);padding:12px 14px;display:grid;grid-template-columns:auto 1fr auto;gap:10px;align-items:start}
+.video-rank{width:26px;height:26px;border-radius:50%;background:#E8F5E9;color:#1B5E20;font-size:11px;font-weight:500;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
 .video-rank.hot{background:#1B5E20;color:#fff}
 .video-title{font-size:13px;font-weight:500;color:var(--color-text-primary);margin-bottom:4px}
-.video-meta{display:flex;gap:12px;flex-wrap:wrap}
+.video-meta{display:flex;gap:10px;flex-wrap:wrap}
 .video-meta-item{font-size:11px;color:var(--color-text-secondary)}
 .video-meta-item span{font-weight:500;color:var(--color-text-primary)}
-.video-note{font-size:12px;color:var(--color-text-secondary);margin-top:6px;line-height:1.6}
-.video-tag{font-size:11px;padding:3px 10px;border-radius:var(--border-radius-md);white-space:nowrap;flex-shrink:0;margin-top:2px}
+.video-note{font-size:12px;color:var(--color-text-secondary);margin-top:5px;line-height:1.55}
+.video-tag{font-size:11px;padding:3px 9px;border-radius:var(--border-radius-md);white-space:nowrap;flex-shrink:0;margin-top:2px}
 .tag-invest{background:#E8F5E9;color:#1B5E20}
 .tag-watch{background:#FFF8E1;color:#E65100}
 .tag-potential{background:#E3F2FD;color:#0D47A1}
-.note-box{background:var(--color-background-secondary);border-left:3px solid #F59E0B;border-radius:0 var(--border-radius-md) var(--border-radius-md) 0;padding:12px 14px;font-size:12px;color:var(--color-text-secondary);line-height:1.7;margin-top:10px}
+.note-box{background:var(--color-background-secondary);border-left:3px solid #F59E0B;border-radius:0 var(--border-radius-md) var(--border-radius-md) 0;padding:11px 13px;font-size:12px;color:var(--color-text-secondary);line-height:1.65;margin-top:8px}
 .note-box strong{font-weight:500;color:var(--color-text-primary)}
-.topic-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.topic-card{background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg);padding:14px 16px}
-.topic-type{font-size:10px;font-weight:500;letter-spacing:.07em;text-transform:uppercase;color:#2E7D32;margin-bottom:6px}
-.topic-title{font-size:13px;font-weight:500;color:var(--color-text-primary);margin-bottom:5px}
+.topic-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.topic-card{background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg);padding:12px 14px}
+.topic-type{font-size:10px;font-weight:500;letter-spacing:.07em;text-transform:uppercase;color:#2E7D32;margin-bottom:5px}
+.topic-title{font-size:13px;font-weight:500;color:var(--color-text-primary);margin-bottom:4px}
 .topic-ref{font-size:11px;color:var(--color-text-secondary);line-height:1.5}
 .phase-box{background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg);overflow:hidden}
-.phase-header{background:#F1F8E9;padding:14px 16px;display:flex;align-items:center;gap:12px;border-bottom:0.5px solid var(--color-border-tertiary)}
-.phase-num{width:28px;height:28px;border-radius:50%;background:#1B5E20;color:#fff;font-size:12px;font-weight:500;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.phase-header{background:#F1F8E9;padding:12px 14px;display:flex;align-items:center;gap:10px;border-bottom:0.5px solid var(--color-border-tertiary)}
+.phase-num{width:26px;height:26px;border-radius:50%;background:#1B5E20;color:#fff;font-size:11px;font-weight:500;display:flex;align-items:center;justify-content:center;flex-shrink:0}
 .phase-header-info{flex:1}
 .phase-name{font-size:14px;font-weight:500;color:var(--color-text-primary)}
-.phase-budget-tag{font-size:18px;font-weight:500;color:#2E7D32}
-.phase-body{padding:16px;display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.phase-col-label{font-size:10px;font-weight:500;letter-spacing:.07em;text-transform:uppercase;color:var(--color-text-secondary);margin-bottom:8px}
-.phase-items{display:flex;flex-direction:column;gap:6px}
-.phase-item{font-size:12px;color:var(--color-text-secondary);display:flex;gap:6px;line-height:1.55}
+.phase-budget-tag{font-size:17px;font-weight:500;color:#2E7D32}
+.phase-body{padding:14px;display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.phase-col-label{font-size:10px;font-weight:500;letter-spacing:.07em;text-transform:uppercase;color:var(--color-text-secondary);margin-bottom:7px}
+.phase-items{display:flex;flex-direction:column;gap:5px}
+.phase-item{font-size:12px;color:var(--color-text-secondary);display:flex;gap:6px;line-height:1.5}
 .phase-item::before{content:'→';color:#4CAF50;flex-shrink:0}
-.phase-target-big{font-size:22px;font-weight:500;color:#2E7D32;margin-bottom:4px}
-.phase-target-note{font-size:11px;color:var(--color-text-secondary)}
-.steps{display:flex;flex-direction:column;gap:8px}
-.step{background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg);padding:12px 14px;display:flex;gap:12px;align-items:flex-start}
-.step-num{width:22px;height:22px;border-radius:50%;background:#1B5E20;color:#fff;font-size:11px;font-weight:500;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
-.step-text{font-size:12px;color:var(--color-text-secondary);line-height:1.6}
+.phase-right{display:flex;flex-direction:column;justify-content:center}
+.phase-target-big{font-size:28px;font-weight:500;color:#2E7D32;margin-bottom:4px}
+.phase-target-note{font-size:12px;color:var(--color-text-secondary)}
+.steps{display:flex;flex-direction:column;gap:7px}
+.step{background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg);padding:11px 13px;display:flex;gap:10px;align-items:flex-start}
+.step-num{width:20px;height:20px;border-radius:50%;background:#1B5E20;color:#fff;font-size:11px;font-weight:500;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
+.step-text{font-size:12px;color:var(--color-text-secondary);line-height:1.55}
 .step-text strong{font-weight:500;color:var(--color-text-primary)}
 </style>
 
 </head><body><div class="header">
-  <div class="header-title">Global YouTube Launch Plan</div>
+  <div class="header-title">Global YouTube Launch Plan · June 2026</div>
   <div class="header-kpis">
     <div><div class="kpi-val">233</div><div class="kpi-label">Current Subscribers</div></div>
     <div><div class="kpi-val">$500</div><div class="kpi-label">Month 1 Budget</div></div>
@@ -78,7 +79,7 @@ body{font-family:var(--font-sans)}
       </div>
       <div class="card">
         <div class="card-title">Content Isn't the Problem</div>
-        <div class="card-desc">The topics are solid, the main issue is a lack of traffic.</div>
+        <div class="card-desc">The topics are solid, the main issue is a lack of initial traffic</div>
       </div>
     </div>
   </div>
@@ -124,7 +125,7 @@ body{font-family:var(--font-sans)}
             <div class="video-meta-item">CTR <span>21.8%</span></div>
             <div class="video-meta-item">New Subs <span>0</span></div>
           </div>
-          <div class="video-note">Highest CTR content on the channel, the thumbnail and title are working well. But zero subscriber conversions so far, so continue monitoring it for a bit.</div>
+          <div class="video-note">Highest CTR on the channel — thumbnail and title are working. But zero subscriber conversions so far, so continue monitoring.</div>
         </div>
         <div class="video-tag tag-watch">Watch &amp; Wait</div>
       </div>
@@ -192,18 +193,10 @@ body{font-family:var(--font-sans)}
             <div class="phase-item">Review CPF at week 2 and week 4</div>
           </div>
         </div>
-        <div>
+        <div class="phase-right">
           <div class="phase-col-label">Target</div>
           <div class="phase-target-big">+1,500–3,000</div>
           <div class="phase-target-note">Projected new subscribers (Month 1)</div>
-          <div style="margin-top:14px">
-            <div class="phase-col-label"></div>
-            <div class="phase-items">
-              <div class="phase-item"></div>
-              <div class="phase-item"></div>
-              <div class="phase-item"></div>
-            </div>
-          </div>
         </div>
       </div>
     </div>
@@ -213,7 +206,7 @@ body{font-family:var(--font-sans)}
     <div class="section-label">Next steps</div>
     <div class="steps">
       <div class="step"><div class="step-num">1</div><div class="step-text"><strong>Confirm budget</strong> — Get Month 1 $500 approved</div></div>
-      <div class="step"><div class="step-num">2</div><div class="step-text"><strong>Promote the video</strong> — P1 (AI/Microsoft) and P2 (Spread)</div></div>
+      <div class="step"><div class="step-num">2</div><div class="step-text"><strong>Promote the videos</strong> — P1 (AI/Microsoft) and P2 (Spread)</div></div>
       <div class="step"><div class="step-num">3</div><div class="step-text"><strong>Rework "Sell America" thumbnail and title</strong> — impressions are solid but CTR is low; fix before promoting</div></div>
       <div class="step"><div class="step-num">4</div><div class="step-text"><strong>Set up audience targeting</strong> — use IG region list for geo, add finance/trading interests</div></div>
       <div class="step"><div class="step-num">5</div><div class="step-text"><strong>Review regularly</strong> — check CPF at week 2, make the call at week 4 on how to adjust Month 2</div></div>
